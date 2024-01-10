@@ -33,18 +33,18 @@ const NavBar = () => {
 
   //array del nav
   const navItems = [
-    { link: "Inicio", path: "home" },
-    { link: "Servicio", path: "service" },
-    { link: "Acerca", path: "about" },
-    { link: "Producto", path: "product" },
-    { link: "Testimonio", path: "testimonial" },
-    { link: "Preguntas Frecuentes", path: "faq" },
+    { link: "Home", path: "home" },
+    { link: "Service", path: "service" },
+    { link: "About", path: "about" },
+    { link: "Product", path: "product" },
+    { link: "Testimonial", path: "testimonial" },
+    { link: "FAQ", path: "faq" },
   ];
 
   return (
     <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
       <nav
-        className={`py-4 lg:px-14 px-4 ${
+        className={`py-4  lg:px-14 px-4 ${
           isSticky
             ? "sticky top-0 left-0 right-0 border-b bg-white "
             : ""
@@ -63,13 +63,14 @@ const NavBar = () => {
 
           <ul className="md:flex space-x-12 hidden">
             {navItems.map(({ link, path }) => (
-              <Link
+              <Link 
+                
                 key={path}
                 spy={true}
                 smooth={true}
                 offset={-100}
                 to={path}
-                className="block text-base text-gray-900 hover:text-brandPrimary first:font-medium"
+                className="block text-lg text-gray-900 hover:text-brandPrimary first:font-medium "
               >
                 {link}
               </Link>

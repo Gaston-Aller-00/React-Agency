@@ -13,4 +13,14 @@ header{
     @apply bg-brandPrimary text-white  py-2 px-4 transition-all duration-300 rounded hover:bg-neutralDGrey hover:-translate-y-2;
 }
 
+.card {
+   @apply shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300
+}
 
+.cardBlog {
+    @apply hover:scale-95 transition-all duration-300
+}
+
+.green {
+    @apply hover:text-brandPrimary
+}

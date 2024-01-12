@@ -11,22 +11,22 @@ function Services() {
     },
     {
       id: 2,
-      tittle: "Membership Organisations",
+      tittle: "National Associations",
       description:
-        "Our membership management software provides full automation of membership of renewalds and payments",
-      image: "/src/assets/icons/membership.png",
+        "Boost your online presence with cutting-edge web development. Responsive design, custom functionalities.",
+      image: "/src/assets/icons/association.png",
     },
     {
       id: 3,
-      tittle: "Membership Organisations",
+      tittle: "Clubs And Groups",
       description:
-        "Our membership management software provides full automation of membership of renewalds and payments",
-      image: "/src/assets/icons/membership.png",
+        "Secure your data with advanced encryption solutions. Protect your digital assets.",
+      image: "/src/assets/icons/group-club.png",
     },
   ];
 
   return (
-    <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto ">
+    <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto " id="service">
       <div className="text-center my-8">
         <h2 className="text-4xl text-neutralDGrey font-semibold mb-2">
           Our Clients
@@ -52,10 +52,10 @@ function Services() {
       {/* card */}
       <div  className="mt-32 grid lg:grid-cols-3 md:grid-cols-2 grid-col-1 md:w-11/12 mx-auto gap-14">
         {services.map(service =>  <div key={service.id} className="px-4 py-8 text-center md:w-[300px]
-        mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex item-center justify-center h-full">
+        mx-auto md:h-80 rounded-md card flex item-center justify-center h-full">
             <div>
                 <div className="bg-[#E8F5E9] h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl"><img src={service.image} alt="" className="-ml-5" /></div>
-                <h4 className="text-2xl font-bold">{service.tittle}</h4>
+                <h4 className="text-2xl font-bold mb-4">{service.tittle}</h4>
                 <p className="text-sm text-neutralDGrey">{service.description}</p>
             </div>
         </div> )}

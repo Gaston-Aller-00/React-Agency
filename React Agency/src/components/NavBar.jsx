@@ -61,7 +61,7 @@ const NavBar = () => {
 
           {/* nav for large */}
 
-          <ul className="md:flex space-x-12 hidden">
+          <ul className="md:flex space-x-12 hidden cursor-pointer">
             {navItems.map(({ link, path }) => (
               <Link 
                 

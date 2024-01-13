@@ -1,5 +1,12 @@
 import React from "react";
 import aboutImg from "../assets/about.png";
+import payment from "../assets/icons/payments.png"
+import member from "../assets/icons/group-club.png"
+import club from "../assets/icons/group.png"
+import booking from "../assets/icons/click.png"
+
+
+
 
 const About = () => {
   return (
@@ -34,28 +41,28 @@ const About = () => {
     {/* las stats */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mr-32">
       <div className="flex items-center gap-4 mb-4 ">
-        <img src="/src/assets/icons/payments.png" alt="pic" />
+        <img src={payment} alt="pic" />
         <div className="">
           <h4 className="text-2xl text-neutralDGrey font-semibold">1,945,342</h4>
           <p className="font-medium">Payments</p>
         </div>
       </div>
       <div className="flex items-center gap-4 mb-4 ">
-        <img src="/src/assets/icons/group.png" alt="pic" />
+        <img src={member} alt="pic" />
         <div className="">
           <h4 className="text-2xl text-neutralDGrey font-semibold">2,245,342</h4>
           <p className="font-medium">Members</p>
         </div>
       </div>
       <div className="flex items-center gap-4 mb-4 ">
-        <img src="/src/assets/icons/group-club.png" alt="pic" />
+        <img src={club} alt="pic" />
         <div className="">
           <h4 className="text-2xl text-neutralDGrey font-semibold">43,231</h4>
           <p className="font-medium">Clubs</p>
         </div>
       </div>
       <div className="flex items-center gap-4 mb-4 ">
-        <img src="/src/assets/icons/click.png" alt="pic" />
+        <img src={booking} alt="pic" />
         <div className="">
           <h4 className="text-2xl text-neutralDGrey font-semibold">1,232,322</h4>
           <p className="font-medium"> Bookings</p>

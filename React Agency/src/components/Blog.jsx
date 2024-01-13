@@ -1,4 +1,9 @@
 import React from "react";
+import blog1 from "../assets/blog1.png"
+import blog2 from "../assets/blog2.png"
+import blog3 from "../assets/blog3.png"
+
+
 
 const Blog = () => {
   const blogs = [
@@ -6,18 +11,18 @@ const Blog = () => {
       id: 1,
       tittle:
         "Creating Streamlined Safeguarding Processes with OneRen ",
-      image: "/src/assets/blog1.png",
+      image: blog1,
     },
     {
       id: 2,
       tittle:
         "What are you safeguarding responsabilities and how can you manage them?",
-      image: "/src/assets/blog2.png",
+      image: blog2,
     },
     {
       id: 3,
       tittle: "Revamping the Mermebership Model with Triathlon Australia",
-      image: "/src/assets/blog3.png",
+      image: blog3,
     },
   ];
 
@@ -41,7 +46,7 @@ const Blog = () => {
                 <h3 className="mb-3">{blog.tittle}</h3>
                 <a href="/" className="font-bold text-brandPrimary hover:text-neutralBlack">
                      Read More
-                      <svg
+                      {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="17"
                         height="11"
@@ -53,7 +58,7 @@ const Blog = () => {
                           d="M12 9.39905L15.2929 6.10615C15.6834 5.71563 15.6834 5.08246 15.2929 4.69194L12 1.39905M15 5.39905L1 5.39905"
                           stroke="#4CAF4F"
                         />
-                      </svg>
+                      </svg> */}
                     </a>
                     </div>
             </div>))
